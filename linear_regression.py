@@ -52,4 +52,9 @@ for i in range(len(bdown)):
         sum_bdown+=i
 b=sum_bup/sum_bdown
 print(b)
+#4)Find a
+a=sum_y-(b*sum_x)
+print(a)
+print(sum_y)
+print(sum_x)
 
