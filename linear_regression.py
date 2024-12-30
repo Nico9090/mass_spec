@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 #Obtain values from a dataset
-x=[]
-y=[]
+x,y=[],[]
 with open('xpoints.txt','r')as f:
         for line in f:
                 x.append(int(line[0:-1]))
