@@ -22,15 +22,5 @@ class Supervised_ML:
             y_pred=[]
             y_pred.append(sl*x+y_int)
             return f"slope : {sl}, y_intercept : {y_int}"
-    def logistic_R(data_file):
-          x,y=[],[]
-          with open(data_file,'r')as f:
-                for line in f:
-                        if not re.match(r'^\d',line):
-                              continue
-                        else:
-                             points=line.strip().split("|")
-                             x.append(float(points[0]))
-                             y.append(float(points[-1])) 
 sample_data=Supervised_ML
 print(sample_data.linear_R("sample_file.txt"))
