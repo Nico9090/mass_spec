@@ -26,7 +26,7 @@ class Supervised_ML:
             y_pred=[]
             y_pred.append(sl*x+y_int)
             return f"slope : {sl}, y_intercept : {y_int}"
-    def logistic_R(data_file):
+    def decisionT_R(data_file):
         try:
             data = pd.read_csv(data_file)
         except FileNotFoundError:
@@ -38,4 +38,4 @@ class Supervised_ML:
             
 sample_data=Supervised_ML
 #print(sample_data.linear_R("sample_file.txt"))
-print(sample_data.logistic_R("sample_data2.csv"))
+print(sample_data.decisionT_R("sample_data2.csv"))
